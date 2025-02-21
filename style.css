@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+
+.logo-pepper {
+  width: 180px;
+}
+
+body {
+  background-color: #1f1f1f;
+  height: 100vh;
+}
+
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  padding: 40px 4%;
+  position: relative;
+}
+
+li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0 40px;
+  font-size: 20px;
+}
+
+li a {
+  color: #7b7a7a;
+  text-decoration: none;
+  display: inline-block;
+  transition-duration: 0.7s;
+}
+
+a:hover {
+  color: #fff;
+  transform: scale(1.15);
+}
+
+button {
+  cursor: pointer;
+  background: rgb(205, 2, 21);
+  background: linear-gradient(
+    90deg,
+    rgba(205, 2, 21, 1) 0%,
+    rgba(145, 0, 31, 1) 100%
+  );
+  color: black;
+  transition-duration: 0.7s;
+}
+
+.btn-contact button {
+  padding: 10px 40px;
+  border: none;
+  border-radius: 28px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.btn-contact button a {
+  text-decoration: none;
+  color: black;
+}
+
+.btn-contact button:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 5px 10px 20px;
+}
+
+.container {
+  display: flex;
+  gap: 250px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 80px;
+}
+
+.top-site {
+  padding: 40px 4%;
+}
+.top-site .right-container img {
+  position: relative;
+  animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+h1 {
+  color: #fff;
+  font-size: 42px;
+  line-height: 50px;
+}
+
+h2 {
+  color: #72a637;
+  font-size: 18px;
+}
+
+span {
+  color: #d0272c;
+}
+
+.btn-contact2 button {
+  padding: 10px 10px;
+  border: none;
+  border-radius: 25px;
+  font-size: 23px;
+  font-weight: 500;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+.links {
+  display: flex;
+  gap: 15px;
+}
+
+@keyframes flutuar {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 60px;
+  }
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 300px;
+}
+
+h3 {
+  color: #d0272c;
+  font-weight: 700;
+  font-size: 35px;
+}
+
+p {
+  color: #fff;
+  font-size: 20px;
+  margin-top: 15px;
+  line-height: 40px;
+}
+
+.myimg {
+  width: 350px;
+}
+
+.container-hab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 200px;
+  gap: 80px;
+}
+
+.cards {
+  display: flex;
+  gap: 40px;
+}
+
+h4 {
+  color: #d0272c;
+  font-weight: 700;
+  font-size: 35px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(
+    90deg,
+    rgba(205, 2, 21, 1) 0%,
+    rgba(145, 0, 31, 1) 100%
+  );
+  padding: 10px 30px;
+  border-top-left-radius: 40px 40px;
+  width: 120px;
+  height: 130px;
+  border-bottom: solid #72a637;
+
+  img {
+    padding-bottom: 8px;
+  }
+
+  p {
+    color: #ffffff;
+    font-family: "Bebas Neue", serif;
+  }
+}
+
+h5 {
+  color: #fff;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d0272c;
+}
+
+.sec-projects {
+  padding: 80px 4%;
+  box-shadow: 0 0 40px 10px #5f5e5e;
+  position: relative;
+}
+.container-projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 110px;
+  margin-left: 30px;
+  gap: 50px;
+}
+
+.project {
+  width: 500px;
+  height: 400px;
+  background-size: cover;
+  background-position: 43%;
+  position: relative;
+  transition: 8s;
+  border-radius: 40px;
+}
+
+.project:hover {
+  background-position: 100% 80%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000070;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.logo-footer img {
+  width: 200px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 4%;
+  align-items: center;
+}
+
+.line-f {
+  padding: 40px 2%;
+}
+
+.borda {
+  border-top: 2px solid #72a637;
+  width: 90%;
+  margin-left: 80px;
+}
+
+::-webkit-scrollbar {
+  background-color: #1f1f1f;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #72a637;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
