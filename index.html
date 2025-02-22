@@ -20,8 +20,9 @@
       href="assets/icons8-pimenta-emoji-32.png"
       type="image/x-icon"
     />
+    <script defer src="script.js"></script>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+
     <title>Portfólio | Gabriel Pimenta</title>
   </head>
   <body>
@@ -32,7 +33,7 @@
         </div>
         <nav>
           <ul>
-            <li><a href="#init">Ínicio</a></li>
+            <li><a href="#init">Início</a></li>
             <li><a href="#aboutme">Sobre</a></li>
             <li><a href="#hability">Habilidades</a></li>
             <li><a href="#projects">Projetos</a></li>
@@ -84,23 +85,24 @@
     <div class="container-hab">
       <h4>Habilidades</h4>
       <div class="cards">
-        <div class="box">
+        <div onclick="removeClassHtml()" class="box">
           <p>HTML5</p>
           <img src="assets/icons8-html.svg" alt="icone-html" />
         </div>
-        <div class="box">
+
+        <div onclick="removeClassCss()" class="box">
           <p>CSS3</p>
           <img src="assets/icons8-css.svg" alt="icone-css" />
         </div>
-        <div class="box">
+        <div onclick="removeClassJs()" class="box">
           <p>JavaScript</p>
           <img src="assets/icons8-javascript.svg" alt="icone-javascript" />
         </div>
-        <div class="box">
+        <div onclick="removeClassRjs()" class="box">
           <p>React.Js</p>
           <img src="assets/icons8-nativo-de-reagir.svg" alt="icone-reactjs" />
         </div>
-        <div class="box">
+        <div onclick="removeClassTcss()" class="box">
           <p>TailwindCSS</p>
           <img
             class="sty"
@@ -108,30 +110,132 @@
             alt="icone-tailwindcss"
           />
         </div>
-        <div class="box">
-          <p>Bootstrap</p>
-          <img src="assets/icons8-bootstrap.svg" alt="icone-bootstrap" />
-        </div>
-        <div class="box">
+        <div onclick="removeClassGit()" class="box" class="box">
           <p>Git</p>
           <img src="assets/icons8-git.svg" alt="icone-git" />
         </div>
-        <div class="box">
+        <div onclick="removeClassGh()" class="box" class="box">
           <p>GitHub</p>
           <img src="assets/icons8-github.svg" alt="icone-github" />
         </div>
       </div>
     </div>
+    <div id="newHtml" class="prop hidden">
+      <div class="divAll">
+        <div class="imghidden"><img src="assets/icons8-html.svg" alt="logo-html" /></div>
+        <div>
+          <p>
+            <span>HTML</span> (Hypertext Markup Language) é uma linguagem de
+            marcação que define a estrutura e o significado do conteúdo de
+            uma página web. É o componente básico da web, permitindo a criação
+            de websites e a inserção de conteúdos como imagens e vídeos.
+          </p>
+        </div>
+        <div class="exit">
+          <button class="exitButton" onclick="putClassHtml()">Voltar</button>
+        </div>
+      </div>
+    </div>
+    <div id="newCss" class="prop hidden">
+      <div class="divAll">
+        <div class="imghidden"><img src="assets/icons8-css.svg" alt="logo-css" /></div>
+        <div>
+          <p>
+            <span>CSS</span> é chamado de linguagem Cascading Style Sheet e é usado para estilizar elementos escritos em uma linguagem de marcação como HTML. O CSS separa o conteúdo da representação visual do site. Pense  na decoração da sua página. Utilizando o CSS é possível alterar a cor do texto e do fundo, fonte e espaçamento entre parágrafos. Também pode criar tabelas, usar variações de layouts, ajustar imagens para suas respectivas telas e assim por diante.
+          </p>
+        </div>
+        <div class="exit">
+          <button class="exitButton" onclick="putClassCss()">Voltar</button>
+        </div>
+      </div>
+    </div>
+    <div id="newJs" class="prop hidden">
+      <div class="divAll">
+        <div class="imghidden"><img src="assets/icons8-javascript.svg" alt="logo-js" /></div>
+        <div>
+          <p>
+            <span>JavaScript</span> é uma linguagem de programação usada para fazer páginas interativas da Internet. As funções de JavaScript podem melhorar a experiência do usuário durante a navegação em um site, como, por exemplo, desde a atualização do feed na página da mídia social até a exibição de animações e mapas interativos. Ao navegar na Internet, é possível visualizar a qualquer momento um carrossel de imagens, um menu suspenso “clicar para visualizar” ou mesmo mudar dinamicamente as cores dos elementos de uma página da Web, isso graças ao JavaScript.
+          </p>
+        </div>
+        <div class="exit">
+          <button class="exitButton" onclick="putClassJs()">Voltar</button>
+        </div>
+      </div>
+    </div>
+    <div id="newRjs" class="prop hidden">
+      <div class="divAll">
+        <div class="imghidden"><img src="assets/icons8-nativo-de-reagir.svg" alt="logo-reactJs" /></div>
+        <div>
+          <p>
+            <span>React</span> é um framework JavaScript criado pelo Facebook (atual Meta) que é usado para criar interfaces de usuário (UI) em aplicativos web. Ele é popular por ser fácil de usar, altamente flexível e escalável, e é usado por muitas empresas de tecnologia, incluindo o Facebook, Instagram e Airbnb.
+          </p>
+        </div>
+        <div class="exit">
+          <button class="exitButton" onclick="putClassRjs()">Voltar</button>
+        </div>
+      </div>
+    </div>
+    <div id="newTcss" class="prop hidden">
+      <div class="divAll">
+        <div class="imghidden"><img src="assets/icons8-tailwind-css.svg" alt="" /></div>
+        <div>
+          <p>
+            <span>TailwindCss</span> é um framework CSS de código aberto que se destaca por sua abordagem única de design utilitário. Em vez de fornecer estilos pré-estilizados para elementos específicos, ele fornece uma série de classes utilitárias que podem ser diretamente aplicadas aos elementos HTML para estilizá-los. Essas classes representam propriedades CSS individuais, como margens, preenchimentos, cores, tamanhos de fonte, alinhamentos e muito mais.
+          </p>
+        </div>
+        <div class="exit">
+          <button class="exitButton" onclick="putClassTcss()">Voltar</button>
+        </div>
+      </div>
+    </div>
+    <div id="newGit" class="prop hidden">
+      <div class="divAll">
+        <div class="imghidden"><img src="assets/icons8-git.svg" alt="logo-git" /></div>
+        <div>
+          <p>
+            <span>Git</span> é um sistema de controle de versão (VCS) distribuído, de código aberto e gratuito. É uma das ferramentas mais populares do mundo. 
+          </p>
+        </div>
+        <div class="exit">
+          <button class="exitButton" onclick="putClassGit()">Voltar</button>
+        </div>
+      </div>
+    </div>
+    <div id="newGh" class="prop hidden">
+      <div class="divAll">
+        <div class="imghidden"><img src="assets/icons8-github.svg" alt="logo-github" /></div>
+        <div>
+          <p>
+            <span>GitHub</span> é uma plataforma online que permite criar, compartilhar e colaborar na escrita de códigos. É também conhecida como "rede social de código aberto" ou "rede social dos programadores". 
+          </p>
+        </div>
+        <div class="exit">
+          <button class="exitButton" onclick="putClassGh()">Voltar</button>
+        </div>
+      </div>
+    </div>
 
     <section id="projects" class="sec-projects">
+      <br />
       <h5>Projetos</h5>
       <div class="container-projects">
-        <div class="project" style="background-image: url(assets/embreve.webp)">
-          <div class="overlay">Calculadora de IMC</div>
-        
+        <div class="project" style="background-image: url(assets/calc.jpeg)">
+          <div onclick="removeClassProjectCalc()" class="overlay">
+            <p>Calculadora</p>
+            <div class="directionimg">
+              <img src="assets/icons8-html.svg" alt="">
+              <img src="assets/icons8-css.svg" alt="">
+              <img src="assets/icons8-javascript.svg" alt="">
+            </div>
+          </div>
+          
         </div>
         <div class="project" style="background-image: url(assets/embreve.webp)">
-          <div class="overlay">Sorteador de Número</div>
+          <div class="overlay">
+            <p>Sorteador de Número</p>
+            <img src="" alt="">
+
+          </div>
         </div>
         <div class="project" style="background-image: url(assets/embreve.webp)">
           <div class="overlay">Jogo JokenPo</div>
@@ -145,6 +249,19 @@
         <div class="project" style="background-image: url(assets/embreve.webp)">
           <div class="overlay">Pepper's Pizzas</div>
         </div>
+      </div>
+      <div id="project-calc" class="containerHidden hidden">
+        <div class="container-proj">
+          <img class="imgHidden" src="assets/calc.jpeg" alt="">
+          <p class="title">Calculadora</p>
+          <p class="description">Projeto totalmente responsivo, onde desenvolvi uma calculadora que tem diversas funcionalidas como: subtração, adição, divisão, multiplicação, apaga os digítos, apaga também o ultimo dígito... Foram utilizados HTML, CSS e JavaScript.</p>
+          <div class="buttonsHidden">
+            <a target="_blank" href="https://calc-project-2wty.vercel.app/"><button>Acessar Projeto</button></a>
+            <a target="_blank" href="https://github.com/gpimenta07/calcProject"><button>Acessar repositório</button></a>
+            <button onclick="putClassProjectCalc()">Voltar</button>
+          </div>
+        </div>
+        
       </div>
     </section>
     <footer id="contacts">

@@ -5,8 +5,10 @@
   font-family: "Poppins", serif;
 }
 
+
+
 .logo-pepper {
-  width: 180px;
+  width: 200px;
 }
 
 body {
@@ -25,6 +27,12 @@ body {
 header {
   padding: 40px 4%;
   position: relative;
+  transition: 1s;
+}
+
+header a:hover {
+  color: #fff;
+  transform: scale(1.15);
 }
 
 li {
@@ -39,11 +47,6 @@ li a {
   text-decoration: none;
   display: inline-block;
   transition-duration: 0.7s;
-}
-
-a:hover {
-  color: #fff;
-  transform: scale(1.15);
 }
 
 button {
@@ -64,6 +67,7 @@ button {
   border-radius: 28px;
   font-size: 25px;
   font-weight: 700;
+  transition: 1s;
 }
 
 .btn-contact button a {
@@ -72,7 +76,10 @@ button {
 }
 
 .btn-contact button:hover {
-  box-shadow: rgba(0, 0, 0, 0.35) 5px 10px 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  transform: scale(1.2);
 }
 
 .container {
@@ -114,11 +121,26 @@ span {
   font-weight: 500;
   margin-top: 30px;
   margin-right: 20px;
+  transition: 1s;
+}
+.btn-contact2 button:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  transform: scale(1.15);
 }
 
 .links {
   display: flex;
   gap: 15px;
+}
+
+.links a {
+  transition: 1s;
+}
+
+.links a:hover {
+  transform: scale(1.2);
 }
 
 @keyframes flutuar {
@@ -135,12 +157,22 @@ span {
   flex-direction: column;
   align-items: center;
   margin: 0 300px;
+  gap: 25px;
 }
 
 h3 {
   color: #d0272c;
   font-weight: 700;
   font-size: 35px;
+  background: rgb(114, 166, 55);
+  background: linear-gradient(
+    90deg,
+    rgba(114, 166, 55, 1) 0%,
+    rgba(208, 39, 44, 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 3px;
+  background-position: left bottom;
 }
 
 p {
@@ -171,6 +203,15 @@ h4 {
   color: #d0272c;
   font-weight: 700;
   font-size: 35px;
+  background: rgb(114, 166, 55);
+  background: linear-gradient(
+    90deg,
+    rgba(114, 166, 55, 1) 0%,
+    rgba(208, 39, 44, 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 3px;
+  background-position: left bottom;
 }
 
 .box {
@@ -187,6 +228,8 @@ h4 {
   width: 120px;
   height: 130px;
   border-bottom: solid #72a637;
+  cursor: pointer;
+  transition: 0.6s;
 
   img {
     padding-bottom: 8px;
@@ -198,6 +241,10 @@ h4 {
   }
 }
 
+.box:hover {
+  transform: scale(1.2);
+}
+
 h5 {
   color: #fff;
   font-size: 40px;
@@ -205,6 +252,7 @@ h5 {
   align-items: center;
   justify-content: center;
   color: #d0272c;
+  font-weight: 900;
 }
 
 .sec-projects {
@@ -228,10 +276,12 @@ h5 {
   position: relative;
   transition: 8s;
   border-radius: 40px;
+  transition: 1s;
 }
 
 .project:hover {
   background-position: 100% 80%;
+  transform: scale(1.15);
 }
 
 .overlay {
@@ -248,6 +298,8 @@ h5 {
   font-size: 24px;
   font-weight: 500;
   color: #fff;
+  flex-direction: column;
+  cursor: pointer;
 }
 
 .logo-footer img {
@@ -283,4 +335,116 @@ html {
   scroll-behavior: smooth;
 }
 
+.prop {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.81);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
 
+.divAll {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 800px;
+  font-weight: bold;
+  border-radius: 20px;
+  margin: 20px 0;
+  transition: opacity 0.3s ease;
+}
+
+.exitButton {
+  font-size: 20px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 20px;
+  transition: 2s;
+  font-weight: bold;
+}
+
+.exitButton:hover {
+  transform: scale(1.15);
+}
+
+.directionimg {
+  display: flex;
+}
+
+.containerHidden {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.81);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.container-proj {
+  background-color: #1f1f1f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  gap: 20px;
+  width: 1000px;
+}
+
+.description {
+  font-size: 20px;
+  margin: 0px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonsHidden {
+  display: flex;
+  gap: 20px;
+  padding: 20px 30px;
+  transition: 100s;
+  justify-content: flex-end;
+}
+.buttonsHidden button {
+  padding: 8px 10px;
+  border: none;
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #000000;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: 1s;
+}
+
+.buttonsHidden button:hover {
+  transform: scale(1.2);
+}
+.imgHidden {
+  width: 400px;
+  height: 250px;
+  border: solid 3px #72a637;
+  margin-top: 40px;
+  border-radius: 15px;
+}
+
+.title {
+  color: #d0272c;
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
